@@ -1,0 +1,104 @@
+.main {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --colour-blue: hsl(215, 51%, 70%);
+  --colour-cyan: hsl(178, 100%, 50%);
+  --colour-white: hsl(0, 0%, 100%);
+  --line-colour: hsl(215, 32%, 27%);
+}
+
+.main *{
+  font-family: Outfit, sans-serif;
+}
+
+
+.main{
+  background-color: var(--bg-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: var(--colour-blue);
+}
+.card{
+  background-color: var(--bg-card);
+  width: 21rem;
+  padding: 1.5rem;
+  display: block;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+}
+.equilibrium{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.heading{
+  color: var(--colour-white);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.heading:hover{
+  color: var(--colour-cyan);
+  cursor:pointer
+}
+.description{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.price_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1.4rem;
+}
+
+.eth {
+  color: var(--colour-cyan);
+  font-weight: 600;
+}
+ 
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.avatar{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+.creation{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  border-top: 0.05rem solid rgb(54, 50, 71)
+}
+.creation a{
+  color: var(--colour-white);
+  text-decoration: none;
+}
+.creation a:hover{
+  color: var(--colour-cyan);
+
+}
+.coder{
+  font-size: 0.5rem;
+  margin-top: 2rem;
+}
+.coder a{
+  color: var(--colour-white);
+  cursor: pointer;
+}
+.coder a:hover{
+  color: var(--colour-cyan);
+
+}

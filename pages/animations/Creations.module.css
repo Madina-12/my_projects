@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 60, 107);
+    background-image: linear-gradient(180deg, 	hsl(281, 76%, 25%) 25%, 	hsl(249, 78%, 25%) 63%);
+    text-align: center;
+}
+
+.AL_QURAN{
+    font-family: 'Amiri Quran', serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.3rem red;
+}
+.Translation{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 0.2rem 0.2rem 0 rgb(0, 0, 0);
+}
+.wrapper_outer{
+    height: 100vw;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 4rem;
+}
+.wrapper{
+    height: 40rem;
+    width: 60rem;
+    overflow: hidden;
+    position: relative;
+}
+.statistics{
+    font-size: 1.5rem;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    background-color: rgba(0, 255, 34, 0.6);
+    text-shadow: 0.1rem 0.1rem 0.3rem rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width:56em){
+    .Creator{
+        width: 90vw;
+        height: 39vw;
+    }
+    .wrapper{
+        width: 90vw;
+        height: 60vw;
+    }
+    .wrapper_outer{
+        height: auto;
+        width: 90vw;
+    }
+}

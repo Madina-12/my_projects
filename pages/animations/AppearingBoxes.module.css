@@ -1,0 +1,37 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #96fbc4 0%, #f9f586 100%);
+    
+    flex-direction: column;
+    border: 0.1rem solid rgb(149, 132, 209);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    max-width: 100vw;
+
+}
+
+.item{
+    border-radius: 1rem;
+}
+
+.developer{
+    position:absolute;
+    bottom: 1rem;
+    color: rgb(7, 161, 28);
+}
+.developer b{
+    color: rgb(91, 133, 29);
+}

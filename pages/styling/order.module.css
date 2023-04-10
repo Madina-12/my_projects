@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.main{
+/* COLORS */
+
+/* PRIMARY COLORS */
+
+--clr-primary-pale-blue: hsl(225, 100%, 94%);
+--clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+/* NEUTRAL COLORS */
+
+--clr-neutral-blue-100: hsl(225, 100%, 98%);
+--clr-neutral-blue-300: hsl(224, 23%, 55%);
+--clr-neutral-blue-800: hsl(223, 47%, 23%);
+
+/* FONTS */
+
+--ff-main: 'Red Hat Display', sans-serif;
+
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+} */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-primary-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    overflow: hidden;
+}
+.card{
+    max-width: 24rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+.hero{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.content{
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.heading{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.description{
+    color: var(--clr-neutral-blue-300);
+    margin-top: 1.5rem;
+}
+
+.price_box{
+    background-color: var(--clr-neutral-blue-100);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+.info{
+    text-align: left;
+    margin-left: 0.5rem;
+}
+.plan{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.price{
+    color: var(--clr-neutral-blue-300);
+    font-size: smaller;
+}
+.change{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--clr-primary-bright-blue);
+}
+.btn{
+    padding: 1rem;
+    background-color: var(--clr-primary-bright-blue);
+    color: white;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem 0.3rem rgb(201, 201, 250);
+    font-size: 1rem;
+}
+.cancel{
+    color: var(--clr-neutral-blue-300);
+    font-weight: 700;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+@media screen and (min-width:48rem){
+    .main{
+        background-image: url("/order/pattern-background-desktop.svg");
+    }
+    .content{
+        padding: 2rem 3rem;
+    }
+    .heading{
+        font-size: 1.7rem;
+        margin-top: 0.5rem;
+    }
+    .description{
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .price{
+        font-size: 1rem;
+    }
+    .price_box{
+        padding: 1.5rem 2rem;
+    }
+    .btn{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,59 @@
+.container{
+    border: 0.1rem solid rgb(32, 32, 32);
+    border-radius: 0.6rem;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32);
+}
+.imageWrapper{
+    position: relative;
+    padding-bottom: 64%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image {
+    transition: transform 0.3s ease;
+  }
+  
+.image:hover {
+    transform: scale(1.06);
+}
+
+.details{
+    padding: 1.5rem;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: gold;
+}
+.name:hover{
+    border-bottom: 0.05rem solid rgb(255, 255, 255);
+}
+.tech_complexity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.technologies{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.technology{
+    margin-right: 0.6rem;
+}
+.complexity{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: end;
+    text-shadow: 0 0 0.4rem white;
+}
+.description{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: rgb(138, 138, 138);
+}

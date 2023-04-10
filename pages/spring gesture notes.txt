@@ -1,0 +1,15 @@
+const [{x,y},api] = useSpring(()=>({
+        x:0,
+        y:0,
+    }),[])
+    const bind = useDrag(({active,cancel, down, movement:[x, y]})=>{ //  gesture state 
+      if (x>333 || y>333) {
+        cancel()
+      }
+        api.start({
+            x:active?x:0,
+            y:active?y:0, // useSpring
+            immediate:active, // see reference in useSpring in react-spring. if immediate is true, then animation will not happen and change will happen immediately. active or down,etc return boolean. if there is immediate:down, then while mouse is down, then animation will not happen, and when box returns back, then animation will happen. and viceversa if immediate:!down   here ! is used
+        },
+        )
+    })

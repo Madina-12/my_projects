@@ -1,0 +1,68 @@
+.card{
+    background-image: url('/ISLAMIC_scenery.webp');
+    background-size: contain;
+    border-radius: 1rem;
+    cursor:grab;
+}
+@media only screen and (max-width: 40em) { 
+  .card{
+    width: 66vh;
+    height: 66vh;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .card{
+    width: 66vh;
+    height: 66vh;
+  }
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+  .card{
+    width: 66vh;
+    height: 66vh;
+  }
+}
+@media only screen and (min-width: 90.063em) { 
+  .card{
+    width: 66vh;
+    height: 66vh;
+  }
+}
+.container{
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+}
+.card > div {
+    will-change: transform;
+    height: 100%;
+    margin: 0vw 0;
+  }
+  
+  .card > div > * {
+    height: 100%;
+    background-size: cover;
+    margin: 0vw 0;
+  }
+.actions{
+  margin-top: 3rem;
+  font-size: 3vw;
+  font-weight: 900;
+  color: gold;
+}
+.actions>b{
+  font-size: 2vw;
+  color: rgb(129, 151, 5);
+}
+.developer{
+  color: green;
+  text-shadow: 3px 0px #ffffff;
+}

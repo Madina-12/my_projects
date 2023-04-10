@@ -1,0 +1,33 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-emphasis: none;
+    text-align: center;
+}
+.developed{
+    font-size: 3rem;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.developer{
+    font-size: 3rem;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    word-wrap: normal;
+    /* margin-left: 4vw; */
+}
+@media (max-width:40em){
+    .developed,.developer{
+        font-size: 2rem;
+    }
+}
